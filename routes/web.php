@@ -14,5 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('mainpage');
+});
+
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/feature', function () {
+    return view('feature');
+});
+
+Route::get('/signup', function () {
+    return view('signup');
+});
+
+Route::get('/carrier', function () {
+    return view('carrier');
 });
